@@ -5,10 +5,10 @@
   "DATA": {
     "agent": {
       "uid": 6159528221394,
-      "key": "LegalDeva",
+      "key": "legal",
       "prompt": {
         "emoji": "⚖️ ",
-        "text": "LegalDeva",
+        "text": "legal",
         "colors": {
           "label": {
             "R": 255,

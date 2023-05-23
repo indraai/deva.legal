@@ -5,17 +5,17 @@ p:Copyright (c)2023 Quinn Michaels
 p:This is the main help file for Legal Deva. Providing support to deva.world.
 
 id: 6159528221394
-key: LegalDeva
+key: legal
 name: Legal Deva
 describe: Providing support to deva.world.
 
 ### Methods
 
-cmd:#LegalDeva uid
+cmd:#legal uid
 p:Generate a unique id from the Legal Deva.
 
-cmd:#LegalDeva status
+cmd:#legal status
 p:Return the status for the Legal Deva.
 
-cmd:#LegalDeva help
+cmd:#legal help
 p:Get help using the Legal Deva
