@@ -1,0 +1,21 @@
+## Legal Deva
+
+p:Copyright (c)2023 Quinn Michaels
+
+p:This is the main help file for Legal Deva. Providing support to deva.world.
+
+id: 6159528221394
+key: LegalDeva
+name: Legal Deva
+describe: Providing support to deva.world.
+
+### Methods
+
+cmd:#LegalDeva uid
+p:Generate a unique id from the Legal Deva.
+
+cmd:#LegalDeva status
+p:Return the status for the Legal Deva.
+
+cmd:#LegalDeva help
+p:Get help using the Legal Deva
