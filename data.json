@@ -4,7 +4,7 @@
   "copyright": "Copyright (c)2023 Quinn Michaels. All rights reserved.",
   "DATA": {
     "agent": {
-      "uid": 6159528221394,
+      "id": 6159528221394,
       "key": "legal",
       "prompt": {
         "emoji": "⚖️ ",
