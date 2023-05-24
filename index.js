@@ -46,7 +46,7 @@ const LEGAL = new Deva({
     leg_question(packet) {
       const agent = this.agent();
       const legal = this.legal();
-      legal.personal.answers.push(packet);
+      legal.personal.questions.push(packet);
     },
     leg_answer(packet) {
       const agent = this.agent();
