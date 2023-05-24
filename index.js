@@ -42,7 +42,18 @@ const LEGAL = new Deva({
   listeners: {},
   modules: {},
   deva: {},
-  func: {},
+  func: {
+    leg_question(packet) {
+      const agent = this.agent();
+      const legal = this.legal();
+      legal.personal.answers.push(packet);
+    },
+    leg_answer(packet) {
+      const agent = this.agent();
+      const legal = this.legal();
+      legal.personal.answers.push(packet);
+    },
+  },
   methods: {
     /**************
     method: uid
@@ -80,6 +91,15 @@ const LEGAL = new Deva({
         }).catch(reject);
       });
     }
+  },
+  onDone(data) {
+    this.listen('devacore:question', packet => {
+      if (packet.q.text.includes(this.vars.trigger)) return this.func.leg_question(packet);
+    });
+    this.listen('devacore:answer', packet => {
+      if (packet.a.text.includes(this.vars.trigger)) return this.func.leg_answer(packet);
+    });
+    return Promise.resolve(data);
   },
 });
 module.exports = LEGAL
