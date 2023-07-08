@@ -11,6 +11,7 @@ const info = {
   describe: package.description,
   version: package.version,
   url: package.homepage,
+  dir: __dirname,
   git: package.repository.url,
   bugs: package.bugs.url,
   author: package.author,
@@ -24,74 +25,21 @@ const {agent,vars} = require(data_path).DATA;
 const Deva = require('@indra.ai/deva');
 const LEGAL = new Deva({
   info,
-  agent: {
-    id: agent.id,
-    key: agent.key,
-    describe: agent.describe,
-    prompt: agent.prompt,
-    voice: agent.voice,
-    profile: agent.profile,
-    translate(input) {
-      return input.trim();
-    },
-    parse(input) {
-      return input.trim();
-    }
-  },
+  agent,
   vars,
+  utils: {
+    translate(input) {return input.trim();},
+    parse(input) {return input.trim();},
+    process(input) {return input.trim();}
+  },
   listeners: {},
   modules: {},
   deva: {},
   func: {
-    leg_question(packet) {
-      const agent = this.agent();
-      const legal = this.legal();
-      legal.personal.questions.push(packet);
-    },
-    leg_answer(packet) {
-      const agent = this.agent();
-      const legal = this.legal();
-      legal.personal.answers.push(packet);
-    },
+    leg_question(packet) {return;},
+    leg_answer(packet) {return;},
   },
-  methods: {
-    /**************
-    method: uid
-    params: packet
-    describe: Return a system id to the user from the :name:.
-    ***************/
-    uid(packet) {
-      return Promise.resolve({text:this.uid()});
-    },
-
-    /**************
-    method: status
-    params: packet
-    describe: Return the current status of the :name:.
-    ***************/
-    status(packet) {
-      return this.status();
-    },
-
-    /**************
-    method: help
-    params: packet
-    describe: The Help method returns the information on how to use the :name:.
-    ***************/
-    help(packet) {
-      return new Promise((resolve, reject) => {
-        this.lib.help(packet.q.text, __dirname).then(help => {
-          return this.question(`#feecting parse ${help}`);
-        }).then(parsed => {
-          return resolve({
-            text: parsed.a.text,
-            html: parsed.a.html,
-            data: parsed.a.data,
-          });
-        }).catch(reject);
-      });
-    }
-  },
+  methods: {},
   onDone(data) {
     this.listen('devacore:question', packet => {
       if (packet.q.text.includes(this.vars.trigger)) return this.func.leg_question(packet);
