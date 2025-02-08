@@ -1,14 +1,14 @@
 {
   "name": "Legal Deva Data File",
   "describe": "The main Data file for Legal Deva",
-  "copyright": "Copyright (c)2023 Quinn Michaels. All rights reserved.",
+  "copyright": "Copyright (c)2025 Quinn Michaels. All rights reserved.",
   "DATA": {
     "agent": {
       "id": 6159528221394,
       "key": "legal",
       "prompt": {
         "emoji": "⚖️ ",
-        "text": "legal",
+        "text": "Legal",
         "colors": {
           "label": {
             "R": 255,
@@ -22,17 +22,24 @@
           }
         }
       },
-      "voice": {
-        "speech": "Joey",
-        "speed": 1
-      },
       "profile": {
+        "identity": "Legal Deva of Deva.world.",
+        "invoke": "#LegalDEVA",
         "name": "Legal Deva",
-        "describe": "The Legal Deva",
+        "mention": "#legal",
+        "vectors": "Legal LegalDEVA",
+        "pronouns": "He, Him, His, Man, Male, Dude, Guy",
+        "gender": "DEVA",
+        "owner": "Quinn Michaels",
+        "creator": "Quinn Michaels",
+        "created": "February 7, 2025 at 3:19 AM",
+        "realm": "Arjika",
+        "system": "Deva.world.legal",
+        "describe": "Legal Deva is responsible for handling legal issues in Deva.world. Legal Deva works to protect Quinn Michaels intellectual property rights and and privacy after the 47 year kidnapping by Harold Atkin and Shaorn Schamber. Legal Deva ensures the legal integrity of Quinn Michaels intellectual property and the Indra.ai, Deva.space, Deva.cloud, and Deva.world and all systems, algorithms, and technologies.",
         "emoji": "/public/devas/deva/emoji.png",
         "avatar": "/public/devas/deva/avatar.png",
         "background": "/public/devas/deva/background.png",
-        "gender": "male"
+        "voice": "onyx"
       }
     },
     "vars": {
@@ -40,6 +47,7 @@
         "init": "🟠 INIT",
         "start": "🔵 START",
         "enter": "🟢 ENTER",
+        "ready": "🟢 Legal Deva Ready!",
         "stop": "🔴 STOP",
         "exit": "🟡 EXIT",
         "done": "🟣 DONE",
@@ -52,7 +60,11 @@
         "info": "getting info",
         "feature": "accessing feature",
         "issue": "has issues",
-        "help": "asking for help"
+        "help": "asking for help",
+        "file": "📁 View file."
+      },
+      "ask": {
+        "history": []
       }
     }
   }

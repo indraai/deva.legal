@@ -1,29 +1,32 @@
 {
   "id": 6159528221394,
-  "name": "@indra.ai/legaldeva",
+  "name": "@indra.ai/deva.legal",
   "version": "0.0.16",
   "author": "Quinn Michaels",
   "license": "MIT",
-  "copyright": "2023",
-  "description": "The Legal Deva manages @LEGAL based Vedic Tradition in deva.world",
+  "copyright": "2025",
+  "description": "The Legal Deva manages Legal ensuring Quinn Michaels and his intellectual property is managed properly.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/indraai/LegalDeva.git"
+    "url": "git+https://github.com/indraai/deva.legal.git"
   },
   "keywords": [
     "Legal",
-    "Deva",
-    "deva.world"
+    "Indra.ai",
+    "Deva.space",
+    "Deva.cloud",
+    "Deva.world"
   ],
   "bugs": {
-    "url": "https://github.com/indraai/LegalDeva/issues"
+    "url": "https://github.com/indraai/deva.legal/issues"
   },
-  "homepage": "https://github.com/indraai/LegalDeva#readme",
+  "homepage": "https://github.com/indraai/deva.legal#readme",
   "dependencies": {
-    "@indra.ai/deva": "^1.1.84"
+    "@indra.ai/deva": "^1.3.4"
   }
 }

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   /**************
   method: Legal
   params: packet
@@ -6,9 +6,9 @@ module.exports = {
   ***************/
   legal(packet) {
     this.context('feature');
-    const legal = this.legal();
-    const data = {};
     return new Promise((resolve, reject) => {
+      const legal = this.legal();
+      const data = {};
       this.question(`#docs raw feature/legal`).then(doc => {
         data.doc = doc.a.data;
         const info = [

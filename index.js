@@ -1,28 +1,30 @@
-// Copyright (c)2023 Quinn Michaels
+// Copyright (c)2025 Quinn Michaels
 // Legal Deva is responsible for the Vedic Tradition Laws.
+import Deva from '@indra.ai/deva';
+import pkg from './package.json' with {type:'json'};
 
-const fs = require('fs');
-const path = require('path');
+import data from './data.json' with {type:'json'};
+const {agent,vars} = data.DATA;
 
-const package = require('./package.json');
+// set the __dirname
+import {dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';    
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 const info = {
-  id: package.id,
-  name: package.name,
-  describe: package.description,
-  version: package.version,
-  url: package.homepage,
+  id: pkg.id,
+  name: pkg.name,
+  describe: pkg.description,
+  version: pkg.version,
+  url: pkg.homepage,
   dir: __dirname,
-  git: package.repository.url,
-  bugs: package.bugs.url,
-  author: package.author,
-  license: package.license,
-  copyright: package.copyright,
+  git: pkg.repository.url,
+  bugs: pkg.bugs.url,
+  author: pkg.author,
+  license: pkg.license,
+  copyright: pkg.copyright,
 };
 
-const data_path = path.join(__dirname, 'data.json');
-const {agent,vars} = require(data_path).DATA;
-
-const Deva = require('@indra.ai/deva');
 const LEGAL = new Deva({
   info,
   agent,
@@ -36,18 +38,68 @@ const LEGAL = new Deva({
   modules: {},
   deva: {},
   func: {
-    leg_question(packet) {return;},
-    leg_answer(packet) {return;},
+    /**************
+    func: view
+    params: opts
+    describe: The view function parses the text parameter to produce the string
+    which calls the correct document file then passes it to the feecting deva
+    for parsing.
+    ***************/
+    file(opts) {
+      this.action('func', 'file');
+      const {text, meta} = opts;
+      const area = meta.params[1] ? meta.params[1] : this.vars.area;
+      const part = meta.params[2] ? meta.params[2].toUpperCase() : this.vars.part;
+      const docName = text.length ? text + '.feecting' : 'main.feecting';
+      const docPath = this.lib.path.join(this.config.dir, area, 'legal', docName);
+      try {
+        let doc = this.lib.fs.readFileSync(docPath, 'utf8');
+        if (part) doc = doc.split(`::BEGIN:${part}`)[1].split(`::END:${part}`)[0];
+        this.state('return', 'file')
+        return doc;
+      }
+      catch (err) {
+        return err;
+      }
+    },
+    
   },
-  methods: {},
-  onDone(data) {
-    this.listen('devacore:question', packet => {
-      if (packet.q.text.includes(this.vars.trigger)) return this.func.leg_question(packet);
-    });
-    this.listen('devacore:answer', packet => {
-      if (packet.a.text.includes(this.vars.trigger)) return this.func.leg_answer(packet);
-    });
-    return Promise.resolve(data);
+  methods: {
+    /**************
+    method: file
+    params: packet
+    describe: The view method replays the request to the view function to return
+    a document from the text parameter.
+    ***************/
+    file(packet) {
+      
+      this.context('file', packet.q.text);
+      this.action('method', `file:${packet.q.text}`);
+      const agent = this.agent();
+      return new Promise((resolve, reject) => {
+        this.state('get', packet.q.text);
+        const doc = this.func.file(packet.q);
+        this.question(`${this.askChr}feecting parse ${doc}`).then(feecting => {
+          this.state('resolve', `view:${packet.q.text}`);
+          return resolve({
+            text: feecting.a.text,
+            html: feecting.a.html,
+            data: feecting.a.data,
+          });
+        }).catch(err => {
+          this.context('reject', `view:${packet.q.text}`);
+          return this.error(err, packet, reject);
+        })
+      });
+    },
+    
   },
+  onDone(data, resolve) {
+    
+  },
+  onError(err, data, reject) {
+    console.log('LEGAL ERROR', err);
+    return reject(err);
+  }
 });
-module.exports = LEGAL
+export default LEGAL
