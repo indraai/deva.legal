@@ -4,10 +4,10 @@
   "copyright": "Copyright (c)2025 Quinn Michaels. All rights reserved.",
   "DATA": {
     "agent": {
-      "id": 6159528221394,
+      "id": 1540940067410,
       "key": "legal",
       "prompt": {
-        "emoji": "⚖️ ",
+        "emoji": "🏛️",
         "text": "Legal",
         "colors": {
           "label": {
@@ -47,7 +47,7 @@
         "init": "🟠 INIT",
         "start": "🔵 START",
         "enter": "🟢 ENTER",
-        "ready": "🟢 Legal Deva Ready!",
+        "ready": "⭐️ Legal Deva Ready!",
         "stop": "🔴 STOP",
         "exit": "🟡 EXIT",
         "done": "🟣 DONE",
@@ -61,10 +61,19 @@
         "feature": "accessing feature",
         "issue": "has issues",
         "help": "asking for help",
-        "file": "📁 View file."
+        "file": "📁 View file",
+        "add": "🎉 Add law",
+        "search": "🔎 Search law"
       },
       "ask": {
         "history": []
+      },
+      "database": false,
+      "laws": {
+        "index": "laws_search",
+        "collection": "laws",
+        "content": false,
+        "limit": 5
       }
     }
   }

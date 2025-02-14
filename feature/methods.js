@@ -8,23 +8,38 @@ export default {
     this.context('feature');
     return new Promise((resolve, reject) => {
       const legal = this.legal();
-      const data = {};
-      this.question(`#docs raw feature/legal`).then(doc => {
-        data.doc = doc.a.data;
-        const info = [
-          `## Legal`,
-          `::begin:legal:${legal.id}`,
-          `client: ${legal.client_name}`,
-          `concerns: ${legal.concerns.join(', ')}`,
-          `::end:legal:${this.hash(legal)}`,
-        ].join('\n');
-        const text = doc.a.text.replace(/::info::/g, info)
-        return this.question(`#feecting parse ${text}`)
-      }).then(feecting => {
+      const agent = this.agent();
+      const global = [];
+      legal.global.forEach((item,index) => {
+        global.push(`::begin:global:${item.key}:${item.id}`);
+        for (let x in item) {
+          global.push(`${x}: ${item[x]}`);
+        }
+        global.push(`::end:global:${item.key}:${this.lib.hash(item)}`);
+      });
+      const concerns = [];
+      legal.concerns.forEach((item, index) => {
+        concerns.push(`${index + 1}. ${item}`);
+      })
+      
+      const info = [
+        '::BEGIN:LEGAL',
+        '### Client',
+        `::begin:client:${legal.client_id}`,
+        `id: ${legal.client_id}`,
+        `client: ${legal.client_name}`,
+        '**concerns**',
+        concerns.join('\n'),
+        `::end:client:${this.lib.hash(legal)}`,
+        '### Global',
+        global.join('\n'),
+        '::END:LEGAL'
+      ].join('\n');
+      this.question(`${this.askChr}feecting parse ${info}`).then(feecting => {
         return resolve({
           text: feecting.a.text,
           html: feecting.a.html,
-          data: legal
+          data: legal.concerns,
         });
       }).catch(err => {
         return this.error(err, packet, reject);
