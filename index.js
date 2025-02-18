@@ -43,31 +43,6 @@ const LEGAL = new Deva({
   deva: {},
   func: {
     /**************
-    func: view
-    params: opts
-    describe: The view function parses the text parameter to produce the string
-    which calls the correct document file then passes it to the feecting deva
-    for parsing.
-    ***************/
-    file(opts) {
-      this.action('func', 'file');
-      const {text, meta} = opts;
-      const area = meta.params[1] ? meta.params[1] : this.vars.area;
-      const part = meta.params[2] ? meta.params[2].toUpperCase() : this.vars.part;
-      const docName = text.length ? text + '.feecting' : 'main.feecting';
-      const docPath = this.lib.path.join(this.config.dir, area, 'legal', docName);
-      try {
-        let doc = this.lib.fs.readFileSync(docPath, 'utf8');
-        if (part) doc = doc.split(`::BEGIN:${part}`)[1].split(`::END:${part}`)[0];
-        this.state('return', 'file')
-        return doc;
-      }
-      catch (err) {
-        return err;
-      }
-    },
-
-    /**************
     func: insert
     params: opts
     describe: the insert function that inserts into the specified collection.
@@ -149,33 +124,6 @@ const LEGAL = new Deva({
     },
   },
   methods: {
-    /**************
-    method: file
-    params: packet
-    describe: The view method replays the request to the view function to return
-    a document from the text parameter.
-    ***************/
-    file(packet) {      
-      this.context('file', packet.q.text);
-      this.action('method', `file:${packet.q.text}`);
-      const agent = this.agent();
-      return new Promise((resolve, reject) => {
-        this.state('get', packet.q.text);
-        const doc = this.func.file(packet.q);
-        this.question(`${this.askChr}feecting parse ${doc}`).then(feecting => {
-          this.state('resolve', `file:${packet.q.text}`);
-          return resolve({
-            text: feecting.a.text,
-            html: feecting.a.html,
-            data: feecting.a.data,
-          });
-        }).catch(err => {
-          this.context('reject', `file:${packet.q.text}`);
-          return this.error(err, packet, reject);
-        })
-      });
-    },    
-
     /**************
     method: add
     params: packet
