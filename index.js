@@ -98,21 +98,19 @@ const LEGAL = new Deva({
         await this.modules.client.connect();
         const db = this.modules.client.db(this.vars.database);
         const table = db.collection(collection);
-    
+
         // await table.dropIndex('a_text_q_text');
         const idx = await table.listIndexes().toArray();
-        const hasIdx = idx.find(i => i.name === this.vars.laws.index)
+        const hasIdx = idx.find(i => i.name === this.vars.laws.index) ? true : false;
+
         if (!hasIdx) {
           const newIdx = await table.createIndex({"content": "text"}, {name: this.vars.laws.index});
         }
     
         const query  = {$text:{$search:opts.text}};
         const projection  = {
-          _id:0,
-          a: {
-            id: 1,
-            text: 1
-          },
+          _id: 0,
+          content: 1,
           score: { $meta: "textScore" }
         };
         result = await table.find(query).project(projection).limit(limit).toArray();
@@ -168,27 +166,39 @@ const LEGAL = new Deva({
       });
     },
     /**************
-    method: history
+    method: searck
     params: packet
     describe: get history
     ***************/
     search(packet) {
       this.context('search', packet.q.text);
       this.action('method', `search:${packet.q.text}`);
+      const data = {};
       return new Promise((resolve, reject) => {
         if (!packet.q.text) return resolve(this._messages.notext);
         const {params} = packet.q.meta;
         if (params[1]) this.vars.laws.limit = packet.q.meta.params[1];
     
         this.func.search(packet.q).then(search => {
+          data.search = search;
           this.state('resolve', `search:${packet.q.text}`);
-          console.log('search results:', search);
+          const search_text = search.map(itm => {return `law: ${itm.content}`}).join('\n');
+          const search_box = [
+            `::begin:search:${packet.id}`,
+            search_text,
+            `::end:search:${this.lib.hash(search_text)}`,
+          ].join('\n');
+          return this.question(`${this.askChr}feecting parse ${search_box}`);
+        }).then(feecting => {
+          data.feecting = feecting.a.data;
+          this.state('resolve', 'search');
           return resolve({
-            text: 'see data',
-            html: 'see data',
-            data: search,
-          })
+            text: feecting.a.text,
+            html: feecting.a.html,
+            data,
+          });
         }).catch(err => {
+          this.state('reject', 'search');
           return this.error(packet, err, reject);
         });
       });
@@ -201,10 +211,9 @@ const LEGAL = new Deva({
     this.prompt(this.vars.messages.ready);
     return resolve(data);
   },
-  onError(err, data, reject) {
+  onError(err, data) {
     this.prompt(this.vars.messages.error);
     console.log(err);
-    return reject(err);
   },
 });
 export default LEGAL
