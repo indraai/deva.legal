@@ -1,15 +1,12 @@
-# ::agent_name::
+# {{agent.name}}
 
-::agent_profile::
+{{profile}}
 
-talk: #legal file:public main:header
-talk: #security file:public main:header
-talk: #algorithm file:public main:header
-
-copyright: (c)2025 Quinn Michaels
+button[Constitutional Training]: /help training/constitution
 
 ::begin:hidden
 #color = ::agent_color::
 #bgcolor = ::agent_bgcolor::
 #bg = ::agent_background::
 ::end:hidden
+copyright: (c)2025 Quinn Michaels
