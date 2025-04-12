@@ -155,7 +155,7 @@ const LEGAL = new Deva({
           return resolve({
             text: `id: ${ins.insertedId || id}`,
             html: `id: ${ins.insertedId || id}`,
-            data: ins,
+            data: `${ins.insertedId || id}`,
           });
         }).catch(err => {
           this.state('reject', 'add');
