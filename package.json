@@ -51,18 +51,27 @@
         }
       },
       "profile": {
-        "name": "Legal Deva",
+        "name": "#LegalDeva",
+        "title": "Legal Deva",
+        "subtitle": "Taking care of legal issues",
+        "describe": "Legal Deva is responsible for handling legal issues in Deva.world.",
+        "tweet": "Legal Deva is responsible for handling legal issues in Deva.world.",
+        "hashtags": "QuinnMichaels,IndraAI,DevaWorld,LegalDeva",
         "pronouns": "He, Him",
         "gender": "DEVA",
+        "style": "Legal precisicion and professionalism.",
+        "voice": "onyx",
+        "system": "Deva.world.legal",
+        "layout": "default",
+        "color": "rgb(186,182,158)",
+        "bgcolor": "rgb(29,28,20)",
+        "emoji": "/assets/devas/legal/emoji.png",
+        "avatar": "/assets/devas/legal/avatar.png",
+        "image": "/assets/devas/legal/image.png",
+        "background": "/assets/devas/legal/background.png",
         "owner": "Quinn Michaels",
         "creator": "Quinn Michaels",
-        "created": "February 7, 2025 at 3:19 AM",
-        "system": "Deva.world.legal",
-        "describe": "Legal Deva is responsible for handling legal issues in Deva.world.",
-        "emoji": "/public/devas/deva/emoji.png",
-        "avatar": "/public/devas/deva/avatar.png",
-        "background": "/public/devas/deva/background.png",
-        "voice": "onyx"
+        "created": "February 7, 2025 at 3:19 AM"
       }
     },
     "vars": {
