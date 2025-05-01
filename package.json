@@ -27,7 +27,7 @@
   },
   "homepage": "https://deva.space/devas/legal",
   "dependencies": {
-    "@indra.ai/deva": "^1.5.35",
+    "@indra.ai/deva": "^1.5.37",
     "mongodb": "^6.13.0"
   },
   "data": {
@@ -51,7 +51,8 @@
         }
       },
       "profile": {
-        "name": "#LegalDeva",
+        "name": "Legal Deva",
+        "hashtag": "#LegalDeva",
         "title": "Legal Deva",
         "subtitle": "Taking care of legal issues",
         "describe": "Legal Deva is responsible for handling legal issues in Deva.world.",

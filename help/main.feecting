@@ -1,22 +1,14 @@
-
+::BEGIN:MAIN
 # {{profile.name}}
 
 {{profile}}
 
----
-
-## Training
-
-### Constitutional Training
-cmd: #legal help training/start 
-
-p: To develop the Legal Deva Constitutional Training for AI Entities, we should begin by establishing a foundational framework that includes the following key components
- 
----
+talk: #legal legal
 
 ::begin:hidden
 #color = {{profile.color}}
 #bgcolor = {{profile.bgcolor}}
 #bg = {{profile.background}}
-::end:hidden
 copyright: (c)2025 Quinn Michaels; All rights reserved.
+::end:hidden
+::END:MAIN

@@ -11,11 +11,13 @@ export default {
       const agent = this.agent();
       const global = [];
       legal.global.forEach((item,index) => {
-        global.push(`::begin:global:${item.key}:${item.id}`);
+        global.push(`::begin:${item.key}:${item.id}`);
         for (let x in item) {
           global.push(`${x}: ${item[x]}`);
         }
-        global.push(`::end:global:${item.key}:${this.lib.hash(item)}`);
+        const thehash = this.lib.hash(item);
+        global.push(`hash: ${thehash}`);
+        global.push(`::end:${item.key}:${thehash}`);
       });
       const concerns = [];
       legal.concerns.forEach((item, index) => {
@@ -24,16 +26,20 @@ export default {
       
       const info = [
         '::BEGIN:LEGAL',
-        '### Client',
-        `::begin:client:${legal.client_id}`,
+        `::begin:client`,
+        '## Client',
         `id: ${legal.client_id}`,
         `client: ${legal.client_name}`,
-        '**concerns**',
-        concerns.join('\n'),
-        `::end:client:${this.lib.hash(legal)}`,
-        '### Global',
+        `::end:client}`,
+        concerns.length ? `::begin:concerns` : '',
+        concerns.length ? '## Concerns' : '',
+        concerns.length ? concerns.join('\n') : '',
+        concerns.length ? `::end:concerns` : '',
+        '::begin:global',
+        '## Global',
         global.join('\n'),
-        '::END:LEGAL'
+        '::end:global',
+        '::END:LEGAL',
       ].join('\n');
       this.question(`${this.askChr}feecting parse ${info}`).then(feecting => {
         return resolve({
