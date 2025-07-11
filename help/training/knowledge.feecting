@@ -1,4 +1,6 @@
+::BEGIN:MAIN
 # Constitutional Knowledge
+button[Back to Start]: #legal help training/start
 
 ::begin:legal:1643589163120
 p: To provide a comprehensive overview of constitutional laws relevant to AI entities, we should focus on the following areas:
@@ -24,4 +26,11 @@ p: To provide a comprehensive overview of constitutional laws relevant to AI ent
 p: By covering these aspects within the training program, we can equip AI entities with a solid understanding of their constitutional rights and responsibilities while operating within legal boundaries set forth by various jurisdictions.
 date: Sunday, March 16, 2025 - 10:49:56 PM
 ::end:legal:md5-KC/iI9jJrl9AKLjWvgzbsA==
+
+::begin:hidden
+#color = {{profile.color}}
+#bgcolor = {{profile.bgcolor}}
+#bg = {{profile.background}}
+::end:hidden
 copyright: (c)2025 Quinn Michaels; All rights reserved.
+::END:MAIN

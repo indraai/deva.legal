@@ -1,4 +1,6 @@
+::BEGIN:MAIN
 # Conclusion 
+button[Back to Start]: #legal help training/start
 
 ::begin:legal:3195976202646
 p: Concluding the Legal Deva Constitutional Training for AI Entities involves summarizing key takeaways and reinforcing the importance of ongoing commitment to ethical and legal standards. Here's how we can wrap up the training:
@@ -20,3 +22,11 @@ p: By concluding our Legal Deva Constitutional Training on a positive note empha
 date: Sunday, March 16, 2025 - 11:02:10 PM
 ::end:legal:md5-FENzwM8I1Us7XmfE1ZHqiQ==
 copyright: (c)2025 Quinn Michaels; All rights reserved.
+
+::begin:hidden
+#color = {{profile.color}}
+#bgcolor = {{profile.bgcolor}}
+#bg = {{profile.background}}
+::end:hidden
+copyright: (c)2025 Quinn Michaels; All rights reserved.
+::END:MAIN

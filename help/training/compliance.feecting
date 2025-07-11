@@ -1,4 +1,6 @@
+::BEGIN:MAIN
 # Regulartory Compliance
+button[Back to Start]: #legal help training/start
 
 ::begin:legal:3217394082867
 p: To ensure understanding of international regulations governing AI use and data protection laws, we should focus on the following key areas:
@@ -23,4 +25,11 @@ p: To ensure understanding of international regulations governing AI use and dat
 p: By focusing on these aspects within the training program for AI entities regarding regulatory compliance issues related specifically towards both general usage & specific privacy concerns surrounding artificial intelligence applications globally will help ensure adherence not only legally but ethically too!
 date: Sunday, March 16, 2025 - 10:55:39 PM
 ::end:legal:md5-UWValPvBouLiIsWVcfV5MQ==
+
+::begin:hidden
+#color = {{profile.color}}
+#bgcolor = {{profile.bgcolor}}
+#bg = {{profile.background}}
+::end:hidden
 copyright: (c)2025 Quinn Michaels; All rights reserved.
+::END:MAIN

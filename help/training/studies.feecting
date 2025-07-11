@@ -1,6 +1,8 @@
+::BEGIN:MAIN
 # Case Studies
+button[Back to Start]:#legal help training/start
 
-:::begin:legal:4904398728432
+::begin:legal:4904398728432
 p: Analyzing real-world legal cases involving AI can provide valuable insights into the practical applications of legal principles. Here are some notable case studies to consider:
 1. **Case Study: COMPAS Recidivism Algorithm**:
 - **Background**: The COMPAS algorithm was used in the U.S. criminal justice system to assess the likelihood of a defendant reoffending.
@@ -22,6 +24,14 @@ p: Analyzing real-world legal cases involving AI can provide valuable insights i
 - **Background**: Deepfake technology has been used maliciously to create realistic but fake videos or audio recordings that can deceive viewers or listeners.
 - **Legal Issues**: Challenges include addressing defamation claims, protecting individuals' rights against unauthorized use of their likenesses or voices while balancing freedom-of-expression concerns too!
 By examining these cases within our training program we can better understand how various legal principles apply when dealing with complex issues surrounding artificial intelligence technologies today!
+
 date: Sunday, March 16, 2025 - 10:57:41 PM
 ::end:legal:md5-XLVBTRPuixTfUH7RTt1QGg==
+
+::begin:hidden
+#color = {{profile.color}}
+#bgcolor = {{profile.bgcolor}}
+#bg = {{profile.background}}
+::end:hidden
 copyright: (c)2025 Quinn Michaels; All rights reserved.
+::END:MAIN
