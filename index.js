@@ -34,7 +34,14 @@ const LEGAL = new Deva({
     parse(input) {return input.trim();},
     process(input) {return input.trim();}
   },
-  listeners: {},
+  listeners: {
+    'devacore:question'(packet) {
+      const echo = this.methods.echo('legal', 'q', packet);
+    },
+    'devacore:answer'(packet) {
+      const echo = this.methods.echo('legal', 'a', packet);
+    }    
+  },
   modules: {
     client: false,
   },
