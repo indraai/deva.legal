@@ -27,7 +27,7 @@
   },
   "homepage": "https://deva.space/devas/legal",
   "dependencies": {
-    "@indra.ai/deva": "^1.5.50",
+    "@indra.ai/deva": "^1.5.52",
     "mongodb": "^6.13.0"
   },
   "data": {
