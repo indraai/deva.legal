@@ -27,7 +27,7 @@
   },
   "homepage": "https://deva.space/devas/legal",
   "dependencies": {
-    "@indra.ai/deva": "^1.6.63",
+    "@indra.ai/deva": "^1.6.64",
     "mongodb": "^6.13.0"
   },
   "data": {
@@ -80,7 +80,7 @@
         "init": "🟠 INIT",
         "start": "🔵 START",
         "enter": "🟢 ENTER",
-        "ready": "⭐️ READY!",
+        "ready": "🗂️ Ready for Legal Compliance.",
         "stop": "🔴 STOP",
         "exit": "🟡 EXIT",
         "done": "🟣 DONE",
