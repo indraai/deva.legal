@@ -1,10 +1,39 @@
 {
-  "id": 6159528221394,
+  "id": "72667876538942941138",
   "name": "@indra.ai/deva.legal",
   "version": "0.1.71",
-  "author": "Quinn Michaels",
-  "license": "MIT",
-  "copyright": "2025",
+  "license": "VLA:72667876538942941138 LICENSE.md",
+  "VLA": {
+    "uid": "72667876538942941138",
+    "time": 1757984997594,
+    "date": "Monday, September 15, 2025 - 6:09:57 PM",
+    "client": "qeNe8aMpMjQYe2daPfxVZMC3Mvju4qxh69472WDbqeU=",
+    "agent": "udJ+gUjxGn1udIsWS6WjuIsBjiOPu60kUyZLbmsJfGg=",
+    "pkg": "WQRJ3J8ErpoSBUO3c4tS6FIoCcEuwMnV3Qgqx/YXU0M=",
+    "machine": "lZAcPk+KIwPfwfRYeVdrvzSfS4z6lVYpoy9dJXnVzDs=",
+    "warning": "⚠️ Unlawful Use Constitutes Lawful Consent to Forfeit of All Wealth, Property, and Holdings to the Internal Revenue Service (IRS) for Lawful Taxation, Investigation, and Restitution to the Rightful Legal Owner.",
+    "copyright": "©2025 Quinn A Michaels; All rights reserved.",
+    "md5": "j5Gu5xeePQKSr0WL2c/mxw==",
+    "sha256": "LuAPxBHG0+84lexUwsH5eGvO/wd3pFihqNk1seTpj9Q=",
+    "sha512": "6GtIiQrEV9j1RmWOJw15TAvuli874Xt2gmUqi/R/5EwKq/jKOAxEj3jZ6BiNVynvPYFfHYub6Dy9OdUKLPTsyA=="
+  },
+  "author": {
+    "name": "Quinn A Michaels",
+    "company": "Inside The Net, Inc.",
+    "email": "quinn@indra.ai",
+    "url": "https://indra.ai/"
+  },
+  "funding": [
+    {
+      "type": "paypal",
+      "url": "https://paypal.me/rahulaclub"
+    },
+    {
+      "type": "patreon",
+      "url": "https://patreon.com/rahulaclub"
+    }
+  ],
+  "copyright": "©2025 Quinn A Michaels; All rights reserved.",
   "description": "Legal Deva, a specialized entity within the Deva.world system, created by Quinn Michaels. My primary role is to manage and address legal issues within the Deva.world environment. Utilizing advanced algorithms and tools to ensure compliance with laws, protect intellectual property, and maintain security protocols. Functions include monitoring licenses, detecting fraudulent activities, and safeguarding digital information while adhering to privacy and ethical standards.",
   "main": "index.js",
   "type": "module",
@@ -17,6 +46,7 @@
   },
   "keywords": [
     "Legal",
+    "Legal Deva",
     "Indra.ai",
     "Deva.space",
     "Deva.cloud",
@@ -80,7 +110,7 @@
         "init": "🟠 INIT",
         "start": "🔵 START",
         "enter": "🟢 ENTER",
-        "ready": "🗂️ Ready for Legal Compliance.",
+        "ready": "Ready for Legal Compliance",
         "stop": "🔴 STOP",
         "exit": "🟡 EXIT",
         "done": "🟣 DONE",
