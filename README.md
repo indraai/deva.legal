@@ -16,8 +16,8 @@ The Legal Deva's role include:
 
 The specific functionalities and implementation details of the Legal Deva depend on the design choices made by the developers and the requirements of the "deva.world" system. The information provided here is a general overview.
 
-©2025 Quinn A Michaels; All rights reserved. 
+Copyright ©2025 Quinn A Michaels; All rights reserved. 
 Legal Signature Required For Lawful Use.
-Distributed under VLA:72667876538942941138 LICENSE.md
+Distributed under VLA:34693241464506007151 LICENSE.md
 
 

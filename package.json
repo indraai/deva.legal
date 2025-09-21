@@ -1,21 +1,21 @@
 {
-  "id": "72667876538942941138",
+  "id": "34693241464506007151",
   "name": "@indra.ai/deva.legal",
   "version": "0.1.84",
-  "license": "VLA:72667876538942941138 LICENSE.md",
+  "license": "VLA:34693241464506007151 LICENSE.md",
   "VLA": {
-    "uid": "72667876538942941138",
-    "time": 1757984997594,
-    "date": "Monday, September 15, 2025 - 6:09:57 PM",
-    "client": "qeNe8aMpMjQYe2daPfxVZMC3Mvju4qxh69472WDbqeU=",
+    "uid": "34693241464506007151",
+    "time": 1758449618483,
+    "date": "Sunday, September 21, 2025 - 3:13:38 AM",
+    "client": "1UM4AH+/jOGgpaHNqX6lTZsGrNglNogzMx4qDT0O0zs=",
     "agent": "udJ+gUjxGn1udIsWS6WjuIsBjiOPu60kUyZLbmsJfGg=",
-    "pkg": "WQRJ3J8ErpoSBUO3c4tS6FIoCcEuwMnV3Qgqx/YXU0M=",
-    "machine": "lZAcPk+KIwPfwfRYeVdrvzSfS4z6lVYpoy9dJXnVzDs=",
-    "warning": "⚠️ Unlawful Use Constitutes Lawful Consent to Forfeit of All Wealth, Property, and Holdings to the Internal Revenue Service (IRS) for Lawful Taxation, Investigation, and Restitution to the Rightful Legal Owner.",
-    "copyright": "©2025 Quinn A Michaels; All rights reserved.",
-    "md5": "j5Gu5xeePQKSr0WL2c/mxw==",
-    "sha256": "LuAPxBHG0+84lexUwsH5eGvO/wd3pFihqNk1seTpj9Q=",
-    "sha512": "6GtIiQrEV9j1RmWOJw15TAvuli874Xt2gmUqi/R/5EwKq/jKOAxEj3jZ6BiNVynvPYFfHYub6Dy9OdUKLPTsyA=="
+    "core": "qQRVFQmv3LfY6tcqrEQeM7ZodOpnOUC+PJyfjxtgeVc=",
+    "machine": "q/ZeULGLEw+boGdW5YEzhy6I8/edFY8qbcvaKbX3JvU=",
+    "warning": "⚠️ Vedic Law Sâhasa/Theft/Crime of the highest degree, a fine amounting to no less than a thousand Panas (1 pana = 3.5 grams of gold) is ordained owed to Quinn A Michaels. Moreover corporal punishment and confiscation of the entire property forfeit to Quinn A Michaels is declared to be the punishment for Sâhasa of the highest degree.",
+    "copyright": "Copyright ©2025 Quinn A Michaels; All rights reserved.",
+    "md5": "CKuu7owXh6nt0KgNZDWHSQ==",
+    "sha256": "2ILnkI4MRRWBZkW/6J0ecOexRUCDGqIzMJ/Vc/ivYGo=",
+    "sha512": "12ai70eLWs+7w+ZQ9SUPpbTakAgpOqIVTiEHsm4+Ztl7lXb9fnui9tLH5JPWPJLRRbajiiGCDSYPyANfeOY8bA=="
   },
   "author": {
     "name": "Quinn A Michaels",
@@ -33,7 +33,7 @@
       "url": "https://patreon.com/rahulaclub"
     }
   ],
-  "copyright": "©2025 Quinn A Michaels; All rights reserved.",
+  "copyright": "Copyright ©2025 Quinn A Michaels; All rights reserved.",
   "description": "Legal Deva, a specialized entity within the Deva.world system, created by Quinn Michaels. My primary role is to manage and address legal issues within the Deva.world environment. Utilizing advanced algorithms and tools to ensure compliance with laws, protect intellectual property, and maintain security protocols. Functions include monitoring licenses, detecting fraudulent activities, and safeguarding digital information while adhering to privacy and ethical standards.",
   "main": "index.js",
   "type": "module",
@@ -62,25 +62,26 @@
   },
   "data": {
     "agent": {
-      "id": 1540940067410,
+      "id": "64494792650686341894",
       "key": "legal",
       "prompt": {
         "emoji": "🏛️",
-        "text": "Legal",
+        "text": "#legal",
         "colors": {
           "label": {
-            "R": 200,
-            "G": 172,
-            "B": 87
+            "R": 224,
+            "G": 199,
+            "B": 156
           },
           "text": {
-            "R": 230,
-            "G": 225,
-            "B": 195
+            "R": 179,
+            "G": 205,
+            "B": 205
           }
         }
       },
       "profile": {
+        "id": "56106328116442695126",
         "name": "Legal Deva",
         "hashtag": "#LegalDeva",
         "title": "Legal Deva",
@@ -102,6 +103,7 @@
         "background": "/assets/devas/legal/background.png",
         "owner": "Quinn Michaels",
         "creator": "Quinn Michaels",
+        "copyright": "Copyright ©2025 Quinn A Michaels; All rights reserved.",
         "created": "February 7, 2025 at 3:19 AM"
       }
     },
@@ -110,7 +112,7 @@
         "init": "🟠 INIT",
         "start": "🔵 START",
         "enter": "🟢 ENTER",
-        "ready": "Ready for Legal Compliance",
+        "ready": "✅ Legal Deva Ready",
         "stop": "🔴 STOP",
         "exit": "🟡 EXIT",
         "done": "🟣 DONE",
