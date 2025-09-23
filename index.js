@@ -40,18 +40,45 @@ const LEGAL = new Deva({
     process(input) {return input.trim();}
   },
   listeners: {
-    'devacore:question'(packet) {
-      const echo = this.methods.echo('legal', 'q', packet);
-    },
-    'devacore:answer'(packet) {
-      const echo = this.methods.echo('legal', 'a', packet);
-    }    
+    // 'devacore:question'(packet) {
+    //   this.func.write_log('question', packet);
+    // },
+    // 'devacore:answer'(packet) {
+    //   this.func.write_log('answer', packet);
+    // },    
+    // // log the answer on complete
+    // 'devacore:finish'(packet) {
+    //   this.func.write_log('finish', packet);
+    // },
+    // // log the answer on complete
+    // 'devacore:complete'(packet) {
+    //   this.func.write_log('complete', packet);
+    // },
   },
   modules: {
     client: false,
   },
   deva: {},
   func: {
+    /**************
+    func: write_log
+    params: type, packet
+    describe: this is the log file writer function that handles 
+    writing for finish and complete for complete chain of custody.
+    ***************/
+    async write_log(type, packet) {
+      let result = false;
+      try {
+        const database = this.modules.client.db(this.vars.log);
+        const collection = database.collection(type);
+        result = await collection.insertOne(packet);
+      } catch (e) {
+        return this.err(e, packet, false);
+      } finally {
+        return result;
+      }
+    },
+    
     /**************
     func: insert
     params: opts
@@ -219,18 +246,29 @@ const LEGAL = new Deva({
     const agent_license = this.info().VLA; // get agent license
     const license_check = this.license_check(personal, agent_license); // check license
     // return this.start if license_check passes otherwise stop.
+    this.action('return', `onInit:${data.id.uid}`);
     return license_check ? this.start(data, resolve) : this.stop(data, resolve);
   }, 
   onReady(data, resolve) {
     const {VLA} = this.info();
-    const {uri,database} = this.legal().global.mongo;
+    
+    this.state('get', `mongo:global:${data.id.uid}`);
+    const {uri,database, log} = this.legal().global.mongo;
+    this.state('set', `mongo:client:${data.id.uid}`);
     this.modules.client = new MongoClient(uri);
+    this.state('set', `mongo:database:${data.id.uid}`);
     this.vars.database = database;
+    this.state('set', `mongo:log:${data.id.uid}`);
+    this.vars.log = log;
+    
     this.prompt(`${this.vars.messages.ready} > VLA:${VLA.uid}`);
+
+    this.action('resolve', `onReady:${data.id.uid}`);
     return resolve(data);
   },
   onError(err, data) {
     this.prompt(this.vars.messages.error);
+    this.action('reject', `onError:${data.id.uid}`);
     console.log(err);
   },
 });
