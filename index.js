@@ -1,7 +1,7 @@
 "use strict";
 // Copyright ©2025 Quinn A Michaels; All rights reserved. 
 // Legal Signature Required For Lawful Use.
-// Distributed under VLA:34693241464506007151 LICENSE.md
+// Distributed under VLA:68994788488631656689 LICENSE.md
 
 // Legal Deva is responsible for the Vedic Tradition Laws.
 import Deva from '@indra.ai/deva';
@@ -40,12 +40,6 @@ const LEGAL = new Deva({
     process(input) {return input.trim();}
   },
   listeners: {
-    'devacore:question'(packet) {
-      this.func.write_log('question', packet);
-    },
-    'devacore:answer'(packet) {
-      this.func.write_log('answer', packet);
-    },    
     // log the answer on complete
     'devacore:finish'(packet) {
       this.func.write_log('finish', packet);
