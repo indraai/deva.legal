@@ -40,20 +40,20 @@ const LEGAL = new Deva({
     process(input) {return input.trim();}
   },
   listeners: {
-    // 'devacore:question'(packet) {
-    //   this.func.write_log('question', packet);
-    // },
-    // 'devacore:answer'(packet) {
-    //   this.func.write_log('answer', packet);
-    // },    
-    // // log the answer on complete
-    // 'devacore:finish'(packet) {
-    //   this.func.write_log('finish', packet);
-    // },
-    // // log the answer on complete
-    // 'devacore:complete'(packet) {
-    //   this.func.write_log('complete', packet);
-    // },
+    'devacore:question'(packet) {
+      this.func.write_log('question', packet);
+    },
+    'devacore:answer'(packet) {
+      this.func.write_log('answer', packet);
+    },    
+    // log the answer on complete
+    'devacore:finish'(packet) {
+      this.func.write_log('finish', packet);
+    },
+    // log the answer on complete
+    'devacore:complete'(packet) {
+      this.func.write_log('complete', packet);
+    },
   },
   modules: {
     client: false,
