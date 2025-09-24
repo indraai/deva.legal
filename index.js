@@ -52,7 +52,6 @@ const LEGAL = new Deva({
   modules: {
     client: false,
   },
-  deva: {},
   func: {
     /**************
     func: write_log
