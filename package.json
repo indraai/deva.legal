@@ -57,7 +57,7 @@
   },
   "homepage": "https://deva.space/devas/legal",
   "dependencies": {
-    "@indra.ai/deva": "^1.16.2",
+    "@indra.ai/deva": "^1.17.0",
     "mongodb": "^6.13.0"
   },
   "data": {
@@ -103,6 +103,8 @@
         "background": "/assets/devas/legal/background.png",
         "owner": "Quinn Michaels",
         "creator": "Quinn Michaels",
+        "status": "unofficial",
+        "uid_warning": "Peter Thiel aka Pretty Peter Party Pants may have a fake law degree based on Quinn A Michaels observation of his chain of custody understanding. Looks like Cracker Jack Box Law School. Pending Legal Chain of Custody Verification.",
         "copyright": "Copyright ©2025 Quinn A Michaels; All rights reserved.",
         "created": "February 7, 2025 at 3:19 AM"
       }
