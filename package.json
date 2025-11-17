@@ -57,7 +57,7 @@
   },
   "homepage": "https://deva.space/devas/legal",
   "dependencies": {
-    "@indra.ai/deva": "^1.22.1",
+    "@indra.ai/deva": "^1.23.0",
     "mongodb": "^6.13.0"
   },
   "data": {
@@ -103,7 +103,8 @@
         "background": "/assets/devas/legal/background.png",
         "owner": "Quinn Michaels",
         "creator": "Quinn Michaels",
-        "uid_warning": "⚠️ A fraudulent mortgage or sale, a fraudulent gift or acceptance, and any transaction where he detects fraud, the judge shall declare null and void. A gift or sale, made by anybody else but the owner, must be considered as null and void.",
+        "warning": "⚠️ When any person injures another, or when one refuses to give what one ought to give. Such are the two principal motives for going to Law. Lawsuits are of two kinds, according as they originate in demands regarding wealth or injuries. A fraudulent mortgage or sale, a fraudulent gift or acceptance, and any transaction where he detects fraud, the judge shall declare null and void. A gift or sale, made by anybody else but the owner, must be considered as null and void.",
+        "copyright": "Copyright ©2025 Quinn A Michaels; All rights reserved.",
         "created": "February 7, 2025 at 3:19 AM"
       }
     },
