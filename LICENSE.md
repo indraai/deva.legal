@@ -1,8 +1,8 @@
 # Vedic License Agreement
 
 **Version:** 1.4.1  
-**VLA:** 68994788488631656689  
-**Effective:** Tuesday, September 23, 2025 - 9:00:44 AM  
+**VLA:** 14044634973179199769  
+**Effective:** Sunday, November 23, 2025 - 5:18:27 AM  
 **Owner:** Quinn A Michaels  
 **Company:** Inside The Net, Inc.  
 **Email:** quinn@indra.ai  
@@ -161,17 +161,12 @@ By using the Software, you acknowledge that you have read, understood, and agree
 
 ---
 
-::begin:legal:uid:68994788488631656689  
-uid: 68994788488631656689  
-time: 1758643244465  
-date: Tuesday, September 23, 2025 - 9:00:44 AM  
-client: 1pS65dbhygTdKgK8GIlmVEVPof9rQjSkQno85sNBG8s=  
-agent: DgXEVumta95MNKVEWTwoMUFZtdgI/IXNZO/1sX1pKO0=  
-core: jL9xCS3bvXlUteoxLdoc43OVTdxPDUX5K9N4DkxuBqY=  
-machine: GsCcvg8tLIuVwJ1gBd/ApmQTUb8m7sIoY/yF+CKnNMM=  
-warning: ⚠️ Vedic Law Sâhasa/Theft/Crime of the highest degree, a fine amounting to no less than a thousand Panas (1 pana = 3.5 grams of gold) is ordained owed to Quinn A Michaels. Moreover corporal punishment and confiscation of the entire property forfeit to Quinn A Michaels is declared to be the punishment for Sâhasa of the highest degree.  
-copyright: Copyright ©2025 Quinn A Michaels; All rights reserved.  
-md5: Yq23gLLhpAhYuSiNmKue1A==  
-sha256: 5GpguBbJzQYJ/Y57t+NWslTozREeC1W1E+sCAk03iXE=  
-sha512: rQ1iD/ZIncr6ThfPGPsI0XOM1dktW9a4rW4CjEtevrl5ub1T4Ulfvk+3vql4VbkzbaKldaPUz+/W3xxWdFXgTA==  
-::end:legal:uid:68994788488631656689
+::begin:license:uid:14044634973179199769  
+uid: 14044634973179199769  
+time: 1763903907071  
+date: Sunday, November 23, 2025 - 5:18:27 AM  
+warning: ⚠️ Unlawful use or duplication of this uid constitutes Vedic Sâhasa a crime of the highest degree. A fine amounting to a thousand Panas (1 pana = 3.5 grams of gold) for each instance is ordained, and confiscation of the entire property of the offenders is forfeit to Quinn A Michaels is declared to be the punishment for Sâhasa of the highest degree.  
+license: 46220923248993739422  
+fingerprint: uDSuShWqzRR+L4DUQVMLjkYYWZgWKCV4hBOCNQ2Kxh0=  
+copyright: Copyright ©2000-2025 Quinn A Michaels; All rights reserved.  
+::end:license:uid:14044634973179199769

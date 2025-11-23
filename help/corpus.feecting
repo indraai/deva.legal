@@ -1,6 +1,7 @@
 // Copyright ©2025 Quinn A Michaels; All rights reserved. 
 // Legal Signature Required For Lawful Use.
-// Distributed under VLA:68994788488631656689 LICENSE.md
+// Distributed under VLA:14044634973179199769 LICENSE.md
+// Sunday, November 23, 2025 - 5:18:27 AM
 
 ::BEGIN:MAIN
 # {{profile.name}}
@@ -9,5 +10,7 @@
 
 p: The monosyllable (Om) is the highest Brahman, three suppressions of the breath are the best form of austerity, but Nothing Surpasses the Savitri of Truthfulness is Better than Silence.
 
-copyright: ©2025 Quinn Michaels
+talk: #legal help main:license
+
+copyright: {{profile.copyright}}
 ::END:MAIN

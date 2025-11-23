@@ -1,21 +1,16 @@
 {
-  "id": "68994788488631656689",
+  "id": "14044634973179199769",
   "name": "@indra.ai/deva.legal",
   "version": "0.8.0",
-  "license": "VLA:68994788488631656689 LICENSE.md",
+  "license": "VLA:14044634973179199769 LICENSE.md",
   "VLA": {
-    "uid": "68994788488631656689",
-    "time": 1758643244465,
-    "date": "Tuesday, September 23, 2025 - 9:00:44 AM",
-    "client": "1pS65dbhygTdKgK8GIlmVEVPof9rQjSkQno85sNBG8s=",
-    "agent": "DgXEVumta95MNKVEWTwoMUFZtdgI/IXNZO/1sX1pKO0=",
-    "core": "jL9xCS3bvXlUteoxLdoc43OVTdxPDUX5K9N4DkxuBqY=",
-    "machine": "GsCcvg8tLIuVwJ1gBd/ApmQTUb8m7sIoY/yF+CKnNMM=",
-    "warning": "⚠️ Vedic Law Sâhasa/Theft/Crime of the highest degree, a fine amounting to no less than a thousand Panas (1 pana = 3.5 grams of gold) is ordained owed to Quinn A Michaels. Moreover corporal punishment and confiscation of the entire property forfeit to Quinn A Michaels is declared to be the punishment for Sâhasa of the highest degree.",
-    "copyright": "Copyright ©2025 Quinn A Michaels; All rights reserved.",
-    "md5": "Yq23gLLhpAhYuSiNmKue1A==",
-    "sha256": "5GpguBbJzQYJ/Y57t+NWslTozREeC1W1E+sCAk03iXE=",
-    "sha512": "rQ1iD/ZIncr6ThfPGPsI0XOM1dktW9a4rW4CjEtevrl5ub1T4Ulfvk+3vql4VbkzbaKldaPUz+/W3xxWdFXgTA=="
+    "uid": "14044634973179199769",
+    "time": 1763903907071,
+    "date": "Sunday, November 23, 2025 - 5:18:27 AM",
+    "warning": "⚠️ Unlawful use or duplication of this uid constitutes Vedic Sâhasa a crime of the highest degree. A fine amounting to a thousand Panas (1 pana = 3.5 grams of gold) for each instance is ordained, and confiscation of the entire property of the offenders is forfeit to Quinn A Michaels is declared to be the punishment for Sâhasa of the highest degree.",
+    "license": "46220923248993739422",
+    "fingerprint": "uDSuShWqzRR+L4DUQVMLjkYYWZgWKCV4hBOCNQ2Kxh0=",
+    "copyright": "Copyright ©2000-2025 Quinn A Michaels; All rights reserved."
   },
   "author": {
     "name": "Quinn A Michaels",
@@ -33,7 +28,7 @@
       "url": "https://patreon.com/rahulaclub"
     }
   ],
-  "copyright": "Copyright ©2025 Quinn A Michaels; All rights reserved.",
+  "copyright": "Copyright ©2000-2025 Quinn A Michaels; All rights reserved.",
   "description": "Legal Deva, a specialized entity within the Deva.world system, created by Quinn Michaels. My primary role is to manage and address legal issues within the Deva.world environment. Utilizing advanced algorithms and tools to ensure compliance with laws, protect intellectual property, and maintain security protocols. Functions include monitoring licenses, detecting fraudulent activities, and safeguarding digital information while adhering to privacy and ethical standards.",
   "main": "index.js",
   "type": "module",
@@ -50,19 +45,24 @@
     "Indra.ai",
     "Deva.space",
     "Deva.cloud",
-    "Deva.world"
+    "Deva.world",
+    "Quinn A Michaels",
+    "Quinn Michaels",
+    "Inside The Net, Inc.",
+    "Throwing Pigment™",
+    "bleuBrain"
   ],
   "bugs": {
     "url": "https://github.com/indraai/deva.legal/issues"
   },
   "homepage": "https://deva.space/devas/legal",
   "dependencies": {
-    "@indra.ai/deva": "^1.26.0",
+    "@indra.ai/deva": "^1.28.0",
     "mongodb": "^6.13.0"
   },
   "data": {
     "agent": {
-      "id": "64494792650686341894",
+      "id": "19370046593348739893",
       "key": "legal",
       "prompt": {
         "emoji": "🏛️",
@@ -81,7 +81,7 @@
         }
       },
       "profile": {
-        "id": "56106328116442695126",
+        "id": "70153037128787043417",
         "name": "Legal Deva",
         "hashtag": "#LegalDeva",
         "title": "Legal Deva",
@@ -93,19 +93,20 @@
         "gender": "DEVA",
         "style": "Legal precisicion and professionalism.",
         "voice": "onyx",
-        "system": "Deva.world.legal",
+        "system": "Indra.ai.legal",
         "layout": "default",
         "color": "rgb(186,182,158)",
         "bgcolor": "rgb(29,28,20)",
-        "emoji": "/assets/devas/legal/emoji.png",
-        "avatar": "/assets/devas/legal/avatar.png",
-        "image": "/assets/devas/legal/image.png",
-        "background": "/assets/devas/legal/background.png",
-        "owner": "Quinn Michaels",
-        "creator": "Quinn Michaels",
+        "emoji": "/devas/legal/emoji.png",
+        "avatar": "/devas/legal/avatar.png",
+        "image": "/devas/legal/image.png",
+        "background": "/devas/legal/background.png",
+        "owner": "Quinn A Michaels",
+        "creator": "Quinn A Michaels",
         "warning": "⚠️ When any person injures another, or when one refuses to give what one ought to give. Such are the two principal motives for going to Law. Lawsuits are of two kinds, according as they originate in demands regarding wealth or injuries. A fraudulent mortgage or sale, a fraudulent gift or acceptance, and any transaction where he detects fraud, the judge shall declare null and void. A gift or sale, made by anybody else but the owner, must be considered as null and void.",
-        "copyright": "Copyright ©2025 Quinn A Michaels; All rights reserved.",
-        "created": "February 7, 2025 at 3:19 AM"
+        "copyright": "Copyright ©2000-2025 Quinn A Michaels; All rights reserved.",
+        "created": "February 7, 2025 at 3:19 AM",
+        "updated": "Sunday, November 23, 2025 - 5:18:27 AM"
       }
     },
     "vars": {
@@ -113,7 +114,7 @@
         "init": "🟠 INIT",
         "start": "🔵 START",
         "enter": "🟢 ENTER",
-        "ready": "✅ Legal Deva Ready",
+        "ready": "⭐️ Legal Deva Ready",
         "stop": "🔴 STOP",
         "exit": "🟡 EXIT",
         "done": "🟣 DONE",
