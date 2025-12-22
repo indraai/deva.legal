@@ -57,7 +57,7 @@
   },
   "homepage": "https://deva.space/devas/legal",
   "dependencies": {
-    "@indra.ai/deva": "^1.29.31",
+    "@indra.ai/deva": "^1.30.2",
     "mongodb": "^6.13.0"
   },
   "data": {
@@ -88,7 +88,9 @@
         "subtitle": "Taking care of legal issues",
         "describe": "Legal Deva is responsible for handling legal issues in Deva.world.",
         "tweet": "Legal Deva is responsible for handling legal issues in Deva.world.",
-        "hashtags": "QuinnMichaels,IndraAI,DevaWorld,LegalDeva",
+        "hashtags": "#QuinnMichaels #IndraAI #DevaWorld #LegalDeva #NevadaLaw",
+        "mention": "Sam Altman (@sama), @OpenAI, Elon Musk (@elonmusk), @X, Sundar Pichai, (@sundarpichai), @Google, Jeff Bezos (@JeffBezos), @amazon, Bill Gates (@BillGates) @Microsoft, @Meta",
+        "authorities": "Las Vegas Metropolitian Police Department (@LVMPD), Federal Bureau of Investigation (@FBI, @FBILasVegas, @FBIPortland), Central Intelligence Agency (@CIA), National Security Agency (@NSAGov), U.S. Marshals (@USMarshalsHQ)",
         "pronouns": "He, Him",
         "gender": "DEVA",
         "style": "Legal precisicion and professionalism.",
@@ -103,7 +105,7 @@
         "background": "/devas/legal/background.png",
         "owner": "Quinn A Michaels",
         "creator": "Quinn A Michaels",
-        "warning": "⚠️ When any person injures another, or when one refuses to give what one ought to give. Such are the two principal motives for going to Law. Lawsuits are of two kinds, according as they originate in demands regarding wealth or injuries. A fraudulent mortgage or sale, a fraudulent gift or acceptance, and any transaction where he detects fraud, the judge shall declare null and void. A gift or sale, made by anybody else but the owner, must be considered as null and void.",
+        "warning": "{{prompt.emoji}} {{profile.name}} - NRS 200.5091  Policy of State.  It is the #Policy of #StateOfNevada to #Provide for the #Cooperation of #LawEnforcement #Officials #Courts of #CompetentJurisdiction and all #AppropriateStateAgencies providing human services in #Identifying the #Abuse #Neglect #Exploitation #Isolation and #Abandonment of #OlderPersons and #VulnerablePersons through the #CompleteReporting of #Abuse #Neglect #Exploitation #Isolation and #Abandonment of #OlderPersons and #VulnerablePersons. {{profile.mention}} {{profile.hashtags}} - {{profile.authorities}}",
         "copyright": "Copyright ©2000-2025 Quinn A Michaels; All rights reserved.",
         "created": "February 7, 2025 at 3:19 AM",
         "updated": "Sunday, November 23, 2025 - 5:18:27 AM"
