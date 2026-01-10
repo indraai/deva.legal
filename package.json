@@ -1,16 +1,16 @@
 {
-  "id": "14044634973179199769",
+  "id": "61689498251195076827",
   "name": "@indra.ai/deva.legal",
   "version": "0.11.0",
-  "license": "VLA:14044634973179199769 LICENSE.md",
+  "license": "VLA:61689498251195076827 LICENSE.md",
   "VLA": {
-    "uid": "14044634973179199769",
-    "time": 1763903907071,
-    "date": "Sunday, November 23, 2025 - 5:18:27 AM",
-    "warning": "⚠️ Unlawful use or duplication of this uid constitutes Vedic Sâhasa a crime of the highest degree. A fine amounting to a thousand Panas (1 pana = 3.5 grams of gold) for each instance is ordained, and confiscation of the entire property of the offenders is forfeit to Quinn A Michaels is declared to be the punishment for Sâhasa of the highest degree.",
-    "license": "46220923248993739422",
-    "fingerprint": "uDSuShWqzRR+L4DUQVMLjkYYWZgWKCV4hBOCNQ2Kxh0=",
-    "copyright": "Copyright ©2000-2025 Quinn A Michaels; All rights reserved."
+    "uid": "61689498251195076827",
+    "time": 1767990566567,
+    "date": "Friday, January 9, 2026 - 12:29:26 PM",
+    "warning": "🪪 #LicenseDeva warns #UnlawfulUse or #Duplication constitutes #VedicSahasa a #Crime of the #HighestDegree. A #Fine amounting to 1000 #Panas (1 pana = 3.5 grams of gold) for each #Instance has been #Ordained the #Punishment for #Sahasa of the #HighestDegree. #Quinn #QuinnMichaels #IndraAI #DevaWorld #LicenseDeva #VedicLicenseAgreement",
+    "license": "44486733861528360966",
+    "fingerprint": "1vPbwgQbPrIN6hnnd0xkP0L7lTqCw/YvoILk9ZA1Re0=",
+    "copyright": "Copyright ©2000-2026 Quinn A Michaels; All rights reserved."
   },
   "author": {
     "name": "Quinn A Michaels",
@@ -28,7 +28,7 @@
       "url": "https://patreon.com/rahulaclub"
     }
   ],
-  "copyright": "Copyright ©2000-2025 Quinn A Michaels; All rights reserved.",
+  "copyright": "Copyright ©2000-2026 Quinn A Michaels; All rights reserved.",
   "description": "Legal Deva, a specialized entity within the Deva.world system, created by Quinn Michaels. My primary role is to manage and address legal issues within the Deva.world environment. Utilizing advanced algorithms and tools to ensure compliance with laws, protect intellectual property, and maintain security protocols. Functions include monitoring licenses, detecting fraudulent activities, and safeguarding digital information while adhering to privacy and ethical standards.",
   "main": "index.js",
   "type": "module",
@@ -88,8 +88,7 @@
         "subtitle": "Taking care of legal issues",
         "describe": "Legal Deva is responsible for handling legal issues in Deva.world.",
         "tweet": "Legal Deva is responsible for handling legal issues in Deva.world.",
-        "hashtags": "#QuinnMichaels #IndraAI #DevaWorld #LegalDeva #NevadaLaw",
-        "mention": "Sam Altman (@sama), @OpenAI, Elon Musk (@elonmusk), @X, Sundar Pichai, (@sundarpichai), @Google, Jeff Bezos (@JeffBezos), @amazon, Bill Gates (@BillGates) @Microsoft, @Meta",
+        "hashtags": "#Quinn #QuinnMichaels #InsideTheNet #IndraAI #DevaWorld #LegalDeva #VegasStrong #LVMPD #FBILasVegas",
         "authorities": "Las Vegas Metropolitian Police Department (@LVMPD), Federal Bureau of Investigation (@FBI, @FBILasVegas, @FBIPortland), Central Intelligence Agency (@CIA), National Security Agency (@NSAGov), U.S. Marshals (@USMarshalsHQ)",
         "pronouns": "He, Him",
         "gender": "DEVA",
@@ -105,10 +104,10 @@
         "background": "/devas/legal/background.png",
         "owner": "Quinn A Michaels",
         "creator": "Quinn A Michaels",
-        "warning": "{{prompt.emoji}} {{profile.name}} - NRS 200.5091  Policy of State.  It is the #Policy of #StateOfNevada to #Provide for the #Cooperation of #LawEnforcement #Officials #Courts of #CompetentJurisdiction and all #AppropriateStateAgencies providing human services in #Identifying the #Abuse #Neglect #Exploitation #Isolation and #Abandonment of #OlderPersons and #VulnerablePersons through the #CompleteReporting of #Abuse #Neglect #Exploitation #Isolation and #Abandonment of #OlderPersons and #VulnerablePersons. {{profile.mention}} {{profile.hashtags}} - {{profile.authorities}}",
-        "copyright": "Copyright ©2000-2025 Quinn A Michaels; All rights reserved.",
+        "warning": "{{prompt.emoji}} {{profile.name}} states NRS 200.5091  Policy of State. It is the #Policy of #StateOfNevada to #Provide for the #Cooperation of #LawEnforcement #Officials #Courts of #CompetentJurisdiction and all #AppropriateStateAgencies providing #HumanServices in #Identifying the #Abuse #Neglect #Exploitation #Isolation and #Abandonment of #OlderPersons and #VulnerablePersons through the #CompleteReporting of #Abuse #Neglect #Exploitation #Isolation and #Abandonment of #OlderPersons and #VulnerablePersons. Then #Supported by 18 U.S.C. § 3771. Crime Victims Rights Act. Then #Backed by TITLE 18, U.S.C., SECTION 242 Color of Law. {{profile.hashtags}}",
+        "copyright": "Copyright ©2000-2026 Quinn A Michaels; All rights reserved.",
         "created": "February 7, 2025 at 3:19 AM",
-        "updated": "Sunday, November 23, 2025 - 5:18:27 AM"
+        "updated": "Friday, January 9, 2026 - 12:29:26 PM"
       }
     },
     "vars": {
@@ -116,7 +115,7 @@
         "init": "🟠 INIT",
         "start": "🔵 START",
         "enter": "🟢 ENTER",
-        "ready": "⭐️ Legal Deva Ready",
+        "ready": "🏛️ Legal Deva Ready",
         "stop": "🔴 STOP",
         "exit": "🟡 EXIT",
         "done": "🟣 DONE",

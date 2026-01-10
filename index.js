@@ -1,10 +1,10 @@
 "use strict";
-// Copyright ©2025 Quinn A Michaels; All rights reserved. 
-// Legal Signature Required For Lawful Use.
-// Distributed under VLA:14044634973179199769 LICENSE.md
-// Sunday, November 23, 2025 - 5:18:27 AM
-
 // Legal Deva
+// Copyright ©2000-2026 Quinn A Michaels; All rights reserved. 
+// Legal Signature Required For Lawful Use.
+// Distributed under VLA:61689498251195076827 LICENSE.md
+// Friday, January 9, 2026 - 12:29:26 PM
+
 
 import Deva from '@indra.ai/deva';
 import { MongoClient, ObjectId } from 'mongodb';
@@ -32,7 +32,7 @@ const info = {
   copyright: pkg.copyright,
 };
 
-const LEGAL = new Deva({
+const LegalDeva = new Deva({
   info,
   agent,
   vars,
@@ -267,4 +267,4 @@ const LEGAL = new Deva({
     console.log(err);
   },
 });
-export default LEGAL
+export default LegalDeva
