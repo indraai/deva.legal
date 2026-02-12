@@ -57,7 +57,7 @@
   },
   "homepage": "https://deva.space/devas/legal",
   "dependencies": {
-    "@indra.ai/deva": "^1.32.0",
+    "@indra.ai/deva": "^1.33.1",
     "mongodb": "^6.13.0"
   },
   "data": {
@@ -104,10 +104,10 @@
         "background": "/devas/legal/background.png",
         "owner": "Quinn A Michaels",
         "creator": "Quinn A Michaels",
-        "warning": "{{prompt.emoji}} {{profile.name}} states NRS 200.5091  Policy of State. It is the #Policy of #StateOfNevada to #Provide for the #Cooperation of #LawEnforcement #Officials #Courts of #CompetentJurisdiction and all #AppropriateStateAgencies providing #HumanServices in #Identifying the #Abuse #Neglect #Exploitation #Isolation and #Abandonment of #OlderPersons and #VulnerablePersons through the #CompleteReporting of #Abuse #Neglect #Exploitation #Isolation and #Abandonment of #OlderPersons and #VulnerablePersons. Then #Supported by 18 U.S.C. § 3771. Crime Victims Rights Act. Then #Backed by TITLE 18, U.S.C., SECTION 242 Color of Law. {{profile.hashtags}}",
+        "warning": "{{prompt.emoji}} {{profile.name}} declares a CONTRACT made by a PERSON INTOXICATED, or INSANE, or GRIEVOUSLY DISORDERED by DISEASE and so FORTH, or WHOLLY DEPENDENT, by an INFANT or VERY AGED PERSON, or by an UNAUTHORIZED PARTY is INVALID. That AGREEMENT which has been made CONTRARY to the LAW can have NO LEGAL FORCE, though it be ESTABLISHED by PROOFS. A FRAUDULENT MORTGAGE or SALE, a FRAUDULENT GIFT or ACCEPTANCE, and any TRANSACTION where FRAUD is DETECTED is DECLARED NULL and VOID. \nowner:  {{profile.owner}} \ntags: {{profile.hashtags}}",
         "copyright": "Copyright ©2000-2026 Quinn A Michaels; All rights reserved.",
         "created": "February 7, 2025 at 3:19 AM",
-        "updated": "Friday, January 9, 2026 - 12:29:26 PM"
+        "updated": "Thursday, February 12, 2026 - 8:46:08 AM"
       }
     },
     "vars": {
