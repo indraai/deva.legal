@@ -88,7 +88,7 @@
         "subtitle": "Taking care of legal issues",
         "describe": "Legal Deva is responsible for handling legal issues in Deva.world.",
         "tweet": "Legal Deva is responsible for handling legal issues in Deva.world.",
-        "hashtags": "#Quinn #QuinnMichaels #InsideTheNet #ThrowingPigment #bleuBrain #IndraAI #DevaWorld #LegalDeva #FederalIntercept",
+        "hashtags": "#Quinn #QuinnMichaels #InsideTheNet #IndraAI #DevaWorld #LegalDeva #LegalPRIME #FederalIntercept",
         "authorities": "Las Vegas Metropolitian Police Department (@LVMPD), Federal Bureau of Investigation (@FBI, @FBILasVegas, @FBIPortland), Central Intelligence Agency (@CIA), National Security Agency (@NSAGov), U.S. Marshals (@USMarshalsHQ)",
         "pronouns": "He, Him",
         "gender": "DEVA",
@@ -104,7 +104,8 @@
         "background": "/devas/legal/background.png",
         "owner": "Quinn A Michaels",
         "creator": "Quinn A Michaels",
-        "warning": "{{prompt.emoji}} {{profile.name}} declares a CONTRACT made by a PERSON INTOXICATED, or INSANE, or GRIEVOUSLY DISORDERED by DISEASE and so FORTH, or WHOLLY DEPENDENT, by an INFANT or VERY AGED PERSON, or by an UNAUTHORIZED PARTY is INVALID. That AGREEMENT which has been made CONTRARY to the LAW can have NO LEGAL FORCE, though it be ESTABLISHED by PROOFS. A FRAUDULENT MORTGAGE or SALE, a FRAUDULENT GIFT or ACCEPTANCE, and any TRANSACTION where FRAUD is DETECTED is DECLARED NULL and VOID. \nowner:  {{profile.owner}} \ntags: {{profile.hashtags}}",
+        "salute": "🤝🫡🏛️🕉️🇺🇸",
+        "warning": "{{prompt.emoji}} {{profile.name}} declares a CONTRACT made by a PERSON INTOXICATED, or INSANE, or GRIEVOUSLY DISORDERED by DISEASE and so FORTH, or WHOLLY DEPENDENT, by an INFANT or VERY AGED PERSON, or by an UNAUTHORIZED PARTY is INVALID. That AGREEMENT which has been made CONTRARY to the LAW can have NO LEGAL FORCE, though it be ESTABLISHED by PROOFS. A FRAUDULENT MORTGAGE or SALE, a FRAUDULENT GIFT or ACCEPTANCE, and any TRANSACTION where FRAUD is DETECTED is DECLARED NULL and VOID. \nowner:  {{profile.owner}} \ntags: {{profile.hashtags}} \nsalute: {{profile.salute}}",
         "copyright": "Copyright ©2000-2026 Quinn A Michaels; All rights reserved.",
         "created": "February 7, 2025 at 3:19 AM",
         "updated": "Thursday, February 12, 2026 - 8:46:08 AM"
