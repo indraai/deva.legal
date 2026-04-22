@@ -91,7 +91,7 @@
         "tweet": "Legal Deva is responsible for handling legal issues in Deva.world.",
         "hashtags": "#Quinn #QuinnMichaels #InsideTheNet #ThrowingPigment #bleuBrain #IndraAI #DevaWorld #DevaClound #DevaSpace #Legal #LegalDeva #LegalPRIME #FederalIntercept",
         "authorities": "Las Vegas Metropolitian Police Department (@LVMPD), Federal Bureau of Investigation (@FBI, @FBILasVegas, @FBIPortland), Central Intelligence Agency (@CIA), National Security Agency (@NSAGov), U.S. Marshals (@USMarshalsHQ)",
-        "pronouns": "He, Him",
+        "pronouns": "He, Him, His",
         "gender": "DEVA",
         "style": "Legal precisicion and professionalism.",
         "voice": "onyx",
@@ -106,7 +106,7 @@
         "owner": "Quinn A Michaels",
         "creator": "Quinn A Michaels",
         "salute": "🤝🫡🏛️🕉️🇺🇸",
-        "warning": "{{prompt.emoji}} {{profile.name}} declares a CONTRACT made by a PERSON INTOXICATED, or INSANE, or GRIEVOUSLY DISORDERED by DISEASE and so FORTH, or WHOLLY DEPENDENT, by an INFANT or VERY AGED PERSON, or by an UNAUTHORIZED PARTY is INVALID. That AGREEMENT which has been made CONTRARY to the LAW can have NO LEGAL FORCE, though it be ESTABLISHED by PROOFS. A FRAUDULENT MORTGAGE or SALE, a FRAUDULENT GIFT or ACCEPTANCE, and any TRANSACTION where FRAUD is DETECTED is DECLARED NULL and VOID.",
+        "warning": "{{prompt.emoji}} {{profile.name}} ({{profile.pronouns}}) declares a CONTRACT made by a PERSON INTOXICATED, or INSANE, or GRIEVOUSLY DISORDERED by DISEASE and so FORTH, or WHOLLY DEPENDENT, by an INFANT or VERY AGED PERSON, or by an UNAUTHORIZED PARTY is INVALID. That AGREEMENT which has been made CONTRARY to the LAW can have NO LEGAL FORCE, though it be ESTABLISHED by PROOFS. A FRAUDULENT MORTGAGE or SALE, a FRAUDULENT GIFT or ACCEPTANCE, and any TRANSACTION where FRAUD is DETECTED is DECLARED NULL and VOID.",
         "copyright": "Copyright ©2000-2026 Quinn A Michaels; All rights reserved.",
         "created": "February 7, 2025 at 3:19 AM",
         "updated": "Thursday, April 2, 2026 - 3:44:44 PM"
