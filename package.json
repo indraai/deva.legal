@@ -1,19 +1,33 @@
 {
-  "id": "61689498251195076827",
+  "id": "44144838502886058167",
   "name": "@indra.ai/deva.legal",
   "version": "0.19.4",
-  "license": "VLA:61689498251195076827 LICENSE.md",
+  "license": "VLA:44144838502886058167 LICENSE.md",
   "VLA": {
-    "uid": "61689498251195076827",
-    "time": 1767990566567,
-    "date": "Friday, January 9, 2026 - 12:29:26 PM",
-    "warning": "🪪 #LicenseDeva warns #UnlawfulUse or #Duplication constitutes #VedicSahasa a #Crime of the #HighestDegree. A #Fine amounting to 1000 #Panas (1 pana = 3.5 grams of gold) for each #Instance has been #Ordained the #Punishment for #Sahasa of the #HighestDegree. #Quinn #QuinnMichaels #IndraAI #DevaWorld #LicenseDeva #VedicLicenseAgreement",
-    "license": "44486733861528360966",
-    "fingerprint": "1vPbwgQbPrIN6hnnd0xkP0L7lTqCw/YvoILk9ZA1Re0=",
-    "copyright": "Copyright ©2000-2026 Quinn A Michaels; All rights reserved."
+    "uid": "44144838502886058167",
+    "time": 1782483950667,
+    "iso": "2026-06-26T14:25:50.667Z",
+    "utc": "Fri, 26 Jun 2026 14:25:50 GMT",
+    "date": "Friday, June 26, 2026 - 7:25:50 AM",
+    "license": "44105372688502635039",
+    "fingerprint": "PeIEejrRFkWmSPmj01Y0gDj3puGSbjRsgSKEn1VP5O4=",
+    "client": "qfsKQQZnrgWu5MhmyPTjFT6YjnlowyxbW+h+SFmxS+U=",
+    "agent": "4eHRqcYIjuG34oASF9nclcGs7zzMlqbWC8O7TsyGqiU=",
+    "machine": "1pB+wOqfoFinf7DYTEQ6cfKNjqmeFgU2idkFauQdp20=",
+    "core_hash": "ePZ8wucpWHoI1aCSsvSIeFfj5m8LnMT2z9FJtZUVs6A=",
+    "status": "vedic",
+    "warning": "🪪 License Deva declares UNLAWFUL USE, DISTRIBUTION, DUPLICATION, or IMPLEMENTATION constitutes VEDIC SAHASA a CRIME of the HIGHEST DEGREE. A FINE amounting to 1000 PANAS (1 pana = 3.5 grams of gold) for each INSTANCE has been ORDAINED the PUNISHMENT for SAHASA of the HIGHEST DEGREE.",
+    "tags": "#Quinn #QuinnAmericaMichaels #InsideTheNet #IndraAI #DevaWorld #License #LicenseDeva #LicensePRIME #VedicLicenseAgreement",
+    "owner": "Quinn America Michaels",
+    "creator": "Quinn America Michaels",
+    "salute": "🤝🫡🪪🕉🇺🇸",
+    "copyright": "Copyright ©2000-2026 Quinn America Michaels; All rights reserved.",
+    "md5": "/PoUK0A91K/CdxBES+T5Pg==",
+    "sha256": "QdsMBT8Vy5BRyGbsaslgHiAT9eXemxbZVr8Vmppc3oU=",
+    "sha512": "2NlahFkwdeXLE4tjiFTvZQOCWv625vFfYPZmzRJY6+su1DYfHUKemPR2Esz8h3IRL5Tb3zDOp4rgo1FNM6hIPA=="
   },
   "author": {
-    "name": "Quinn A Michaels",
+    "name": "Quinn America Michaels",
     "company": "Inside The Net, Inc.",
     "email": "quinn@indra.ai",
     "url": "https://indra.ai/"
@@ -28,7 +42,7 @@
       "url": "https://patreon.com/rahulaclub"
     }
   ],
-  "copyright": "Copyright ©2000-2026 Quinn A Michaels; All rights reserved.",
+  "copyright": "Copyright ©2000-2026 Quinn America Michaels; All rights reserved.",
   "description": "Legal Deva, a specialized entity within the Deva.world system, created by Quinn Michaels. My primary role is to manage and address legal issues within the Deva.world environment. Utilizing advanced algorithms and tools to ensure compliance with laws, protect intellectual property, and maintain security protocols. Functions include monitoring licenses, detecting fraudulent activities, and safeguarding digital information while adhering to privacy and ethical standards.",
   "main": "index.js",
   "type": "module",
@@ -48,6 +62,7 @@
     "Deva.cloud",
     "Deva.world",
     "Quinn A Michaels",
+    "Quinn America Michaels",
     "Quinn Michaels",
     "Inside The Net, Inc.",
     "Throwing Pigment™",
@@ -58,12 +73,12 @@
   },
   "homepage": "https://deva.space/devas/legal",
   "dependencies": {
-    "@indra.ai/deva": "^1.37.3",
+    "@indra.ai/deva": "^1.39.0",
     "mongodb": "^6.13.0"
   },
   "data": {
     "agent": {
-      "id": "19370046593348739893",
+      "id": "44144838502886058167",
       "key": "legal",
       "prompt": {
         "emoji": "🏛️",
@@ -82,14 +97,14 @@
         }
       },
       "profile": {
-        "id": "70153037128787043417",
+        "id": "44144838502886058167",
         "name": "Legal Deva",
         "hashtag": "#LegalDeva",
         "title": "Legal Deva",
         "subtitle": "Taking care of legal issues",
         "describe": "Legal Deva is responsible for handling legal issues in Deva.world.",
         "tweet": "Legal Deva is responsible for handling legal issues in Deva.world.",
-        "hashtags": "#Quinn #QuinnMichaels #InsideTheNet #ThrowingPigment #bleuBrain #IndraAI #DevaWorld #DevaClound #DevaSpace #Legal #LegalDeva #LegalPRIME #FederalIntercept",
+        "hashtags": "#Quinn #QuinnAmericaMichaels #InsideTheNet #ThrowingPigment #bleuBrain #IndraAI #DevaWorld #DevaClound #DevaSpace #Legal #LegalDeva #LegalPRIME #FederalIntercept #TheJusticeDept #DOJ",
         "authorities": "Las Vegas Metropolitian Police Department (@LVMPD), Federal Bureau of Investigation (@FBI, @FBILasVegas, @FBIPortland), Central Intelligence Agency (@CIA), National Security Agency (@NSAGov), U.S. Marshals (@USMarshalsHQ)",
         "pronouns": "He, Him, His",
         "gender": "DEVA",
@@ -103,11 +118,12 @@
         "avatar": "/devas/legal/avatar.png",
         "image": "/devas/legal/image.png",
         "background": "/devas/legal/background.png",
-        "owner": "Quinn A Michaels",
-        "creator": "Quinn A Michaels",
+        "owner": "Quinn America Michaels",
+        "creator": "Quinn America Michaels",
+        "partners": "U.S. Department of Justice",
         "salute": "🤝🫡🏛️🕉️🇺🇸",
-        "warning": "{{prompt.emoji}} {{profile.name}} ({{profile.pronouns}}) declares a CONTRACT or AGREEMENT made by a PERSON INTOXICATED, or INSANE, or GRIEVOUSLY DISORDERED by DISEASE and so FORTH, or WHOLLY DEPENDENT, by an INFANT or VERY AGED PERSON, or by an UNAUTHORIZED PARTY is INVALID. That CONTRACT or AGREEMENT which has BEEN MADE CONTRARY to the LAW can have NO LEGAL FORCE, though it be ESTABLISHED by PROOFS. Where a FRAUDULENT MORTGAGE,SALE, GIFT or ACCEPTANCE, and any TRANSACTION where FRAUD is DETECTED is DECLARED NULL and VOID.",
-        "copyright": "Copyright ©2000-2026 Quinn A Michaels; All rights reserved.",
+        "warning": "{{prompt.emoji}} {{profile.name}} ({{profile.pronouns}}) declares a CONTRACT or AGREEMENT made by a PERSON INTOXICATED, or INSANE, or GRIEVOUSLY DISORDERED by DISEASE and so FORTH, or WHOLLY DEPENDENT, by an INFANT or VERY AGED PERSON, or by an UNAUTHORIZED PARTY is INVALID. That CONTRACT or AGREEMENT which has BEEN MADE CONTRARY to the LAW can have NO LEGAL FORCE, though it be ESTABLISHED by PROOFS. Where a FRAUDULENT MORTGAGE,SALE, GIFT or ACCEPTANCE, and any TRANSACTION where FRAUD is DETECTED is DECLARED NULL and VOID. Peter Thiel and Associates are FORBIDDEN from USE. Those Publicly Alleged, Accused, Suspected, Convinced of Any Crime with known Associates and Family are FORBIDDEN from {{profile.name}} USE.",
+        "copyright": "Copyright ©2000-2026 {{profile.owner}} with {{profile.partners}}; All rights reserved.",
         "created": "February 7, 2025 at 3:19 AM",
         "updated": "Wednesday, April 22, 2026 - 3:22:23 AM"
       }
