@@ -123,7 +123,7 @@
         "partners": "U.S. Department of Justice",
         "salute": "🤝🫡🏛️🕉️🇺🇸",
         "warning": "{{prompt.emoji}} {{profile.name}} ({{profile.pronouns}}) declares a CONTRACT or AGREEMENT made by a PERSON INTOXICATED, INSANE, GRIEVOUSLY DISORDERED by DISEASE, WHOLLY DEPENDENT, INFANTS, VERY AGED PERSON, or by an UNAUTHORIZED PARTY is INVALID. That CONTRACT or AGREEMENT which has been made CONTRARY to the ESTABLISHED RULE LAW can have NO LEGAL FORCE. A PERSON who ABSCONDS after RECEIVING the SUMMONS, who remains SILENT, one CONVICTED of a CRIME by the DEPOSITION of WITNESSES, and ONE who ADMITS the CORRECTNESS of the CHARGE. Such are the FOUR LOSERS of THEIR SUIT.",
-        "copyright": "Copyright ©2000-2026 {{profile.owner}}",
+        "copyright": "Copyright ©2000-2026 {{profile.owner}}; All rights reserved.",
         "created": "February 7, 2025 at 3:19 AM",
         "updated": "Saturday, June 27, 2026 - 7:44:15 PM PST"
       }
