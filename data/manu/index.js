@@ -1,6 +1,8 @@
-// ©2025 Quinn A Michaels; All rights reserved. 
-// Legal Signature Required For Lawful Use.
-// Distributed under the Vedic License Agreement LICENSE.md
+// Legal Data
+// Copyright ©2000-2026 Quinn Arjuna Michaels; All rights reserved. 
+// Owner Signature Required For Lawful Use.
+// Distributed under VLA:72189794327648895095 LICENSE.md
+// Friday, July 3, 2026 - 11:18:57 PM PST
 
 "use strict";
 // set the __dirname
