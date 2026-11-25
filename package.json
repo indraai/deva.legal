@@ -73,9 +73,9 @@
   },
   "homepage": "https://deva.space/devas/legal",
   "dependencies": {
-    "@indra.ai/deva": "^1.52.1",
+    "@indra.ai/deva": "^1.67.26",
     "@indra.ai/deva.evidence": "^0.3.0",
-    "mongodb": "^7.7.0"
+    "mongodb": "^7.9.1"
   },
   "data": {
     "agent": {
@@ -147,6 +147,7 @@
         "history": []
       },
       "database": false,
+      "log": "_log",
       "laws": {
         "index": "laws_search",
         "collection": "laws",

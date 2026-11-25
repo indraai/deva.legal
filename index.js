@@ -43,11 +43,11 @@ const LegalDeva = new Deva({
 	listeners: {
 		// log the answer on complete
 		'devacore:finish'(packet) {
-			await this.func.write_log('finish', packet);
+			this.func.write_log('finish', packet);
 		},
 		// log the answer on complete
 		'devacore:complete'(packet) {
-			await this.func.write_log('complete', packet);
+			this.func.write_log('complete', packet);
 		},
 	},
 	devas: {},
@@ -154,7 +154,7 @@ const LegalDeva = new Deva({
 		add(packet) {
 			this.context('add', `law: ${packet.q.meta.params[1]}`);
 		
-			return new Promise((resolve, reject) => {
+			return new Promise(async (resolve, reject) => {
 				if (!packet.q.text) return resolve(this._messages.notext);
 				this.vars.laws.content = packet.q.text; // store text in local
 		
@@ -196,7 +196,7 @@ const LegalDeva = new Deva({
 			this.context('search', packet.q.text);
 			this.action('method', `search:${packet.q.text}`);
 			const data = {};
-			return new Promise((resolve, reject) => {
+			return new Promise(async (resolve, reject) => {
 				if (!packet.q.text) return resolve(this._messages.notext);
 				const {params} = packet.q.meta;
 				if (params[1]) this.vars.laws.limit = packet.q.meta.params[1];
@@ -204,7 +204,7 @@ const LegalDeva = new Deva({
 				try {
 					const search = await this.func.search(packet.q);
 					data.search = search;
-					this.state('resolve', `search:${packet.q.text}`);
+					
 					const search_text = search.map(itm => {return `law: ${itm.content}`}).join('\n');
 					const search_box = [
 						`::begin:search:${packet.id}`,
@@ -213,7 +213,7 @@ const LegalDeva = new Deva({
 					].join('\n');
 					const feecting = await this.question(`${this.askChr}feecting parse ${search_box}`);
 					data.feecting = feecting.a.data;
-					this.state('resolve', 'search');
+					this.state('resolve', `search:${packet.q.text}`);
 					return resolve({
 						text: feecting.a.text,
 						html: feecting.a.html,
@@ -228,9 +228,10 @@ const LegalDeva = new Deva({
 	},
 	onReady(data, resolve) {
 		const {VLA} = this.info();
-		const {uri,database} = this.report().global?.mongo || {};
+		const {uri, database, log} = this.report().global?.mongo || {};
+		this.vars.database = database; // set the main database
+		this.vars.log = log; // set the logging database
 		if (uri) this.modules.client = new MongoClient(uri); // build the client if uri is set
-		this.vars.database = database;
 		this.prompt(`${this.vars.messages.ready} > VLA:${VLA.uid}`);
 		return resolve(data);
 	},
