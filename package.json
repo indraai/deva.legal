@@ -144,7 +144,7 @@
         "history": []
       },
       "database": false,
-      "log": "_log",
+      "log": false,
       "laws": {
         "index": "laws_search",
         "collection": "laws",

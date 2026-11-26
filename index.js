@@ -225,8 +225,8 @@ const LegalDeva = new Deva({
 	onReady(data, resolve) {
 		const {VLA} = this.info();
 		const {uri, database, log} = this.legal().global?.mongo || {};
-		this.vars.database = database; // set the main database
-		this.vars.log = log; // set the logging database
+		this.vars.database = database ? database : this.vars.database; // set the main database
+		this.vars.log = log ? log : this.vars.log; // set the logging database
 		if (uri) this.modules.client = new MongoClient(uri); // build the client if uri is set
 		this.prompt(`${this.vars.messages.ready} > VLA:${VLA.uid}`);
 		return resolve(data);

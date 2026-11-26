@@ -52,7 +52,7 @@ export function	manu(packet) {
 		}
 		catch(e) {
 			this.state('catch', `manu:${packet.id}`);
-			return this.error(e, packet, reject);
+			return this.err(e, packet, reject);
 		}
 		finally {
 			this.state('retrun', `manu:${packet.id}`);
