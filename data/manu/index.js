@@ -49,18 +49,16 @@ export function	manu(packet) {
 				const jsonfile = this.lib.path.join(__dirname, 'data', 'laws', 'manu', key);
 				this.lib.fs.writeFileSync(jsonfile, JSON.stringify(result, null, 2), {encoding:'utf8',flag:'w'});
 			}          
-		}
-		catch(e) {
-			this.state('catch', `manu:${packet.id}`);
-			return this.err(e, packet, reject);
-		}
-		finally {
 			this.state('retrun', `manu:${packet.id}`);
 			return resolve({
 				text: this.vars.messages.manu,
 				html: this.vars.messages.manu,
 				data
 			});
+		}
+		catch(e) {
+			this.state('catch', `manu:${packet.id}`);
+			return this.err(e, packet, reject);
 		}
 	});		
 }
