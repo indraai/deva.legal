@@ -69,7 +69,7 @@
   "bugs": {
     "url": "https://github.com/indraai/deva.legal/issues"
   },
-  "homepage": "https://deva.space/devas/legal",
+  "homepage": "https://deva.world/devas/legal",
   "dependencies": {
     "@indra.ai/deva": "^1.67.26",
     "mongodb": "^7.9.1"

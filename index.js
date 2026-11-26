@@ -217,7 +217,7 @@ const LegalDeva = new Deva({
 					});					
 				} 
 				catch (err) {
-					return this.err(packet, err, reject);				
+					return this.err(err, packet, reject);				
 				}		
 			});
 		},

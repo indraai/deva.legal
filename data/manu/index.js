@@ -141,8 +141,7 @@ export function laws(packet) {
 			});
 		}
 		catch(e) {
-			this.state('catch', `laws:${packet.id}`);
-			return this.error(e, packet, reject);
+			return this.err(e, packet, reject);
 		}
 	});
 }
