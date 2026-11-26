@@ -79,11 +79,9 @@ const LegalDeva = new Deva({
 			let result = false;
 
 			this.state('insert', opts.collection);
-			await this.modules.client.connect(); // connect to the database client.
 			const db = this.modules.client.db(this.vars.database);  // set the database to use
 			result = await db.collection(opts.collection).insertOne(opts.data); // insert the data
 
-			await this.modules.client.close(); // close the connection when done
 			this.state('return', 'insert');
 			return result; // return the result to the requestor.
 		},
@@ -98,13 +96,13 @@ const LegalDeva = new Deva({
 			let result = false;
 
 			this.state('update', opts.collection);
-			await this.modules.client.connect(); // connect to the database client.
+
 			const db = this.modules.client.db(this.vars.database);  // set the database to use
 			result = await db.collection(opts.collection).updateOne(
 				{ _id: new ObjectId(`${opts.id}`) },
 				{ $set: opts.data }
 			); // insert the data
-			await this.modules.client.close(); // close the connection when done
+
 			this.state('return', 'update');
 			return result; // return the result to the requestor.
 		},    
@@ -119,7 +117,6 @@ const LegalDeva = new Deva({
 			const {collection,limit} = this.vars.laws;
 
 			this.state('search', opts.text);
-			await this.modules.client.connect();
 			const db = this.modules.client.db(this.vars.database);
 			const table = db.collection(collection);
 
@@ -138,7 +135,6 @@ const LegalDeva = new Deva({
 				score: { $meta: "textScore" }
 			};
 			result = await table.find(query).project(projection).limit(limit).toArray();
-			await this.modules.client.close();
 			this.state('return', 'search');
 			return result;
 		},
@@ -183,7 +179,7 @@ const LegalDeva = new Deva({
 					});
 				} 
 				catch (err) {
-					return this.error(err, packet, reject);
+					return this.err(err, packet, reject);
 				}
 			});
 		},
@@ -221,14 +217,14 @@ const LegalDeva = new Deva({
 					});					
 				} 
 				catch (err) {
-					return this.error(packet, err, reject);				
+					return this.err(packet, err, reject);				
 				}		
 			});
 		},
 	},
 	onReady(data, resolve) {
 		const {VLA} = this.info();
-		const {uri, database, log} = this.report().global?.mongo || {};
+		const {uri, database, log} = this.legal().global?.mongo || {};
 		this.vars.database = database; // set the main database
 		this.vars.log = log; // set the logging database
 		if (uri) this.modules.client = new MongoClient(uri); // build the client if uri is set
